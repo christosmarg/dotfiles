@@ -1,0 +1,24 @@
+Christos' dotfiles
+==================
+
+Dependencies
+------------
+- stow 
+- the programs each config directory needs
+
+Deployment
+----------
+        $ cd ~
+        $ git clone git://git.christosmarg.xyz/dotfiles.git
+        $ cd dotfiles
+        $ stow dir...
+
+where `dir...` the directories to be deployed.
+
+The following directories contain system specific configurations
+and should be deployed using
+
+Note
+----
+On FreeBSD, all the files in `freebsd` need to be copied,
+not symlinked with or without stow.

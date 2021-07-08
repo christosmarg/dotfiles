@@ -1,0 +1,12 @@
+# .shrc - bourne shell startup file 
+
+# go into visual mode.
+set -o vi
+. .config/aliasrc
+
+# set prompt
+PS1="`whoami`@`hostname | sed 's/\..*//'`"
+case `id -u` in
+        0) PS1="${PS1}# ";;
+        *) PS1="${PS1}$ ";;
+esac

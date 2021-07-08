@@ -1,0 +1,9 @@
+#!/bin/sh
+
+# TODO: edit, delete, add
+foo="${HOME}/shit/bmr"
+while [ -d ${foo} ]; do
+	cd ${foo}
+	foo=$(ls | dmenu -l 30)
+done
+cat ${foo} | expand -t8 |  dmenu -l 30 | awk '{print $NF}' | xargs ${BROWSER}

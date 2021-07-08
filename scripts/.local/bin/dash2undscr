@@ -1,0 +1,5 @@
+#!/bin/sh
+
+for file in $(find .); do
+	mv ${file} $(echo ${file} | tr '-' '_')
+done

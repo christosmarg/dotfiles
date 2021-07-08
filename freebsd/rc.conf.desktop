@@ -1,0 +1,16 @@
+hostname="pleb"
+keymap="us.kbd"
+ifconfig_re0="DHCP"
+sshd_enable="YES"
+dumpdev="AUTO"
+zfs_enable="YES"
+kld_list="linux nvidia nvidia modeset fuse sound snd_hda snd_ich snd_uadio"
+sndiod_enable="YES"
+tor_enable="NO"
+
+# bhyve shit
+if_bridge_load="YES"
+if_tap_load="YES"
+cloned_interfaces="bridge0 tap0"
+ifconfig_bridge0="DHCP addm re0 addm tap0"
+ifconfig_bridge0_alias0="inet 10.0.0.1/24"

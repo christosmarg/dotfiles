@@ -1,0 +1,9 @@
+aliasrc/
+irssi/
+mbsync/
+mpd/.config/mpd/*
+!mpd/.config/mpd/mpd.conf
+mutt/
+ncmpcpp/.config/ncmpcpp/*
+!ncmpcpp/.config/ncmpcpp/config
+newsboat/.config/newsboat/urls

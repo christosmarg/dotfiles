@@ -1,0 +1,6 @@
+kern.vty="YES"
+zfs_load="YES"
+nvidia_name="nvidia"
+nvidia_modeset_load="YES"
+nvidia_modeset_name="nvidia-modeset"
+vmm_load="YES"

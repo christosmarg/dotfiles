@@ -1,0 +1,13 @@
+#!/bin/sh
+
+echo "mapaddress 10.40.40.40 ajnvpgl6prmkb7yktvue6im5wiedlz2w32uhcwaamdiecdrfpwwgnlqd.onion" >> /usr/local/etc/tor/torrc
+service tor restart
+mkdir -p ~/.irssi/certs && cd ~/.irssi/certs
+openssl req -x509 -sha256 -new -newkey rsa:4096 -days 1000 -nodes -out freenode.pem -keyout freenode.pem
+printf "/msg NickServ CERT ADD "
+openssl x509 -in ~/.irssi/certs/freenode.pem -outform der | sha1 | cut -d' ' -f1
+echo "/network add -sasl_username crm -sasl_password crmsasl -sasl_mechanism EXTERNAL FreenodeTor"
+echo "/server add -ssl -ssl_cert ~/.irssi/certs/freenode.pem -net FreenodeTor 10.40.40.40 6697"
+echo "/ignore * CTCPS"
+echo "/save"
+echo "/quit"
