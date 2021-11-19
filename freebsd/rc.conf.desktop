@@ -7,6 +7,7 @@ zfs_enable="YES"
 kld_list="linux nvidia nvidia modeset fuse sound snd_hda snd_ich snd_uadio"
 sndiod_enable="YES"
 tor_enable="NO"
+jail_enable="NO"
 
 # bhyve shit
 if_bridge_load="YES"

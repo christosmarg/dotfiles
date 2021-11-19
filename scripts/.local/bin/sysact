@@ -7,5 +7,5 @@ renew_dwm       kill -HUP $(pidof -s dwm)
 reboot          ${reb:-doas reboot}
 shutdown        ${shut:-doas shutdown -p now}"
 
-choice="$(echo "$cmds" | cut -d ' ' -f 1 | dmenu)" || exit 1
-`echo "$cmds" | grep "^$choice" | cut -d ' ' -f2-`
+choice="$(echo "${cmds}" | cut -d ' ' -f 1 | dmenu)" || exit 1
+`echo "${cmds}" | grep "^${choice}" | cut -d ' ' -f2-`

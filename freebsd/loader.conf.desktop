@@ -1,4 +1,7 @@
 kern.vty="YES"
+kern.geom.label.disk_ident.enable="0"
+kern.geom.label.gptid.enable="0"
+kern.geom.label.ufsid.enable="0"
 zfs_load="YES"
 nvidia_name="nvidia"
 nvidia_modeset_load="YES"

@@ -1,8 +1,9 @@
 #!/bin/sh
 
+tmsync &
 xset r rate 300 50 &
 slstatus &
 setxkbmap -layout 'ca(multix),ee,ru(phonetic),gr' -option 'grp:shift_caps_toggle' &
 musicpd &
-chsnd uaudio
+mixer -d8
 setscreens &

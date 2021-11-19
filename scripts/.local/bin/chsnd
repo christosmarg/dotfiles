@@ -1,7 +1,0 @@
-#!/bin/sh
-
-case $1 in
-        uaudio) sysctl hw.snd.default_unit=8 ;;
-        pcm) sysctl hw.snd.default_unit=0 ;;
-        *) echo "${0##*/} {uaudio | pcm}"
-esac

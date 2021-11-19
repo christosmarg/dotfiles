@@ -1,5 +1,18 @@
 #!/bin/sh
 
-# TODO: add bib option
-#pdflatex $1.tex && biber $1 && pdflatex $1.tex -o $1.pdf
-pdflatex $1.tex
+usage() {
+	echo "usage: ${0##*/} [-b] file" 1>&2 && exit 1
+}
+
+file_exists() {
+	test ! -f "${1}.tex" && echo "${1}.tex: file not found" && exit 1
+}
+
+test ${#} -eq 0 && usage
+if [ ${1} = "-b" ]; then
+	file_exists "${2}"
+	pdflatex ${2}.tex && biber ${2} && pdflatex ${2}.tex -o ${2}.pdf
+else
+	file_exists "${1}"
+	pdflatex ${1}.tex
+fi
