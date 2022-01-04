@@ -1,5 +1,6 @@
 syntax on
 set number!
+set mouse=a
 set tabstop=8 shiftwidth=8 noexpandtab
 set softtabstop=8
 set noautoindent
@@ -14,6 +15,9 @@ nmap <C-n> :NERDTreeToggle<CR>
 vmap ++ <plug>NERDCommenterToggle
 nmap ++ <plug>NERDCommenterToggle
 noremap <Space><Space> <Esc>/<++><CR><Esc>ca>
+
+map <leader>c :w! \| !doccomp %<CR>
+map <leader>p :!docprev %<CR><CR>
 
 "HTML
 autocmd FileType html noremap ;h1 i<h1></h1><Enter><Enter><++><Esc>2ka

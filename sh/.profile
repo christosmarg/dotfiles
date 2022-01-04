@@ -9,7 +9,7 @@
 # if wanted.
 # PATH=/sbin:/bin:/usr/sbin:/usr/bin:/usr/local/sbin:/usr/local/bin:$HOME/bin; export PATH
 # BLOCKSIZE=K;	export BLOCKSIZE
-export PATH="$PATH:$(du "$HOME/.local/bin/" | cut -f2 | tr '\n' ':' | sed 's/:*$//')"
+export PATH="${PATH}:$(du "${HOME}/.local/bin/" | cut -f2 | tr '\n' ':' | sed 's/:*$//')"
 
 # Setting TERM is normally done through /etc/ttys.  Do only override
 # if you're sure that you'll never log in via telnet or xterm or a
@@ -20,12 +20,15 @@ export TERMINAL="st"
 export BROWSER="firefox"
 export READER="zathura"
 export FILE="sfm"
-export PAGER="less"
+export PAGER="less -R"
 
+export SFEED_YANKER="xargs echo -n | xclip -sel clip"
+export SFEED_URL_FILE="${HOME}/.sfeed/urls"
+[ -f "${SFEED_URL_FILE}" ] || touch "${SFEED_URL_FILE}"
 export FZF_DEFAULT_OPTS="--layout=reverse --height 40%"
 
 # set ENV to a file invoked each time sh is started for interactive use.
-export ENV="$HOME/.shrc"
+export ENV="${HOME}/.shrc"
 
 # Query terminal size; useful for serial lines.
 if [ -x /usr/bin/resizewin ] ; then /usr/bin/resizewin -z ; fi

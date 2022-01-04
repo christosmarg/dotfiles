@@ -1,3 +1,0 @@
-#!/bin/sh
-
-pandoc $1.md --pdf-engine=xelatex -V mainfont=Arial -o $1.pdf
