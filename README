@@ -15,9 +15,6 @@ Deployment
 
 where `dir...` the directories to be deployed.
 
-The following directories contain system specific configurations
-and should be deployed using
-
 Note
 ----
 On FreeBSD, all the files in `freebsd` need to be copied,
