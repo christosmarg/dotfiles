@@ -26,6 +26,7 @@ export SFEED_YANKER="xargs echo -n | xclip -sel clip"
 export SFEED_URL_FILE="${HOME}/.sfeed/urls"
 [ -f "${SFEED_URL_FILE}" ] || touch "${SFEED_URL_FILE}"
 export FZF_DEFAULT_OPTS="--layout=reverse --height 40%"
+export LESSHISTFILE="/dev/null"
 
 # set ENV to a file invoked each time sh is started for interactive use.
 export ENV="${HOME}/.shrc"

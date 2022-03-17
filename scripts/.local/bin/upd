@@ -12,7 +12,7 @@ case $1 in
 		dst="master@margiolis.net:${3}"
 		;;
 	lap)	src="${2}"
-		dst="knob:${3}"
+		dst="tpad:${3}"
 		;;
 	desk)	src="${2}"
 		dst="pleb:${3}"

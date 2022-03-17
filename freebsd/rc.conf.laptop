@@ -1,4 +1,4 @@
-hostname="knob"
+hostname="tpad"
 wlans_iwm0="wlan0"
 synchronous_dhclient="YES"
 ifconfig_wlan0="WPA DHCP"
