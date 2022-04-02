@@ -1,3 +1,0 @@
-#!/bin/sh
-
-curl https://wttr.in/Athens+Greece | less -R

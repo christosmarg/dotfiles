@@ -1,6 +1,0 @@
-#!/bin/sh
-
-bgloc="${HOME}/.local/share/bg"
-test -f "${1}" && ln -sf "$(readlink -f "${1}")" "${bgloc}" &&
-nfy "${bgloc}" "Changing wallpaper..."
-xwallpaper --zoom "$(readlink -f "${bgloc}")" >/dev/null
