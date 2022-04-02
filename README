@@ -9,7 +9,7 @@ Dependencies
 Deployment
 ----------
         $ cd ~
-        $ git clone git://git.christosmarg.xyz/dotfiles.git
+        $ git clone git://git.margiolis.net/dotfiles.git
         $ cd dotfiles
         $ stow dir...
 
