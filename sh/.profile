@@ -23,7 +23,9 @@ export PAGER="less -R"
 
 export SFEED_YANKER="xargs echo -n | xclip -sel clip"
 export SFEED_URL_FILE="${HOME}/.sfeed/urls"
+export SFEED_BOOKMARK_FILE="${HOME}/shit/playlist"
 [ -f "${SFEED_URL_FILE}" ] || touch "${SFEED_URL_FILE}"
+[ -f "${SFEED_BOOKMARK_FILE}" ] || touch "${SFEED_BOOKMARK_FILE}"
 export FZF_DEFAULT_OPTS="--layout=reverse --height 40%"
 export LESSHISTFILE="/dev/null"
 

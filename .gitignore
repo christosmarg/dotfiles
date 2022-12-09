@@ -6,5 +6,7 @@ mpd/.config/mpd/*
 mutt/
 ncmpcpp/.config/ncmpcpp/*
 !ncmpcpp/.config/ncmpcpp/config
-newsboat/.config/newsboat/urls
 sfeed/
+freebsd/devfs.conf
+freebsd/hosts
+freebsd/src-env.conf
