@@ -11,7 +11,10 @@ cp -vf /boot/loader.conf freebsd/loader.conf.desktop
 
 mkdir -pv homedir
 cp -rv \
+	${HOME}/.fonts \
 	${HOME}/.gitconfig \
-	${HOME}/.ssh \
+	${HOME}/.password-store \
 	${HOME}/.sfeed \
+	${HOME}/.ssh \
+	${HOME}/.vim \
 	homedir/
