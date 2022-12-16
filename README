@@ -1,21 +1,11 @@
 Christos' dotfiles
 ==================
 
-Dependencies
-------------
-- stow 
-- the programs each config directory needs
+This system uses stow(8) to deploy the dotfiles.
 
-Deployment
-----------
+Usage
+-----
         $ cd ~
         $ git clone git://git.margiolis.net/dotfiles.git
         $ cd dotfiles
-        $ stow dir...
-
-where `dir...` the directories to be deployed.
-
-Note
-----
-On FreeBSD, all the files in `freebsd` need to be copied,
-not symlinked with or without stow.
+	# ./autoinstall

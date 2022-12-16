@@ -1,0 +1,23 @@
+#!/bin/sh
+
+ignoredirs="\.|\.git|freebsd|homedir|xbindkeys"
+homedirs="$(ls -a homedir/ | grep -Ev '^\.$|^\.\.$')"
+
+mkdir -p ${HOME}/.config
+
+find . -type d -maxdepth 1 | xargs -r basename | grep -Ev ${ignoredirs} |
+xargs -r stow -v
+
+for h in ${homedirs}; do
+	test -d "${h}" && mkdir -pv ${HOME}/${h}
+	cp -rv homedir/${h} ${HOME}/
+done
+
+cp -v \
+	freebsd/devfs.conf \
+	freebsd/hosts \
+	freebsd/jail.conf \
+	freebsd/src-env.conf \
+	/etc/
+cp -v freebsd/rc.conf.desktop /etc/rc.conf
+cp -v freebsd/loader.conf.desktop /boot/loader.conf

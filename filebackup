@@ -1,0 +1,17 @@
+#!/bin/sh
+
+cp -vf \
+	/etc/devfs.conf \
+	/etc/hosts \
+	/etc/jail.conf \
+	/etc/src-env.conf \
+	freebsd/
+cp -vf /etc/rc.conf freebsd/rc.conf.desktop
+cp -vf /boot/loader.conf freebsd/loader.conf.desktop
+
+mkdir -pv homedir
+cp -rv \
+	${HOME}/.gitconfig \
+	${HOME}/.ssh \
+	${HOME}/.sfeed \
+	homedir/
