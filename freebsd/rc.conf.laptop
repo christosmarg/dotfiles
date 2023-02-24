@@ -1,8 +1,7 @@
 hostname="tpad"
 wlans_iwm0="wlan0"
 synchronous_dhclient="YES"
-ifconfig_em0="DHCP"
-ifconfig_wlan0="WPA DHCP"
+ifconfig_wlan0="up WPA DHCP"
 #ifconfig_wlan0_ipv6="inet6 accept_rtadv"
 sshd_enable="YES"
 # Set dumpdev to "AUTO" to enable crash dumps, "NO" to disable
@@ -20,7 +19,7 @@ if_epair_load="YES"
 #jail_reverse_stop="YES"
 
 cloned_interfaces="bridge0 epair0 tap0"
-ifconfig_bridge0="addm em0 addm epair0a addm tap0 up"
+ifconfig_bridge0="addm wlan0 addm epair0a addm tap0 up"
 ifconfig_epair0a="up"
 
 rpcbind_enable="YES"

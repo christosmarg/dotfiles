@@ -1,0 +1,16 @@
+[user]
+	name = Christos Margiolis
+	email = christos@margiolis.net
+[http]
+	postBuffer = 157286400
+[sendemail]
+	smtpencryption = tls
+	smtpserver = mail.margiolis.net
+	smtpuser = christos@margiolis.net
+	smtpserverport = 587
+[pull]
+	ff = only
+[alias]
+	fdiff = "!f() {\
+			git diff -U999999;\
+		}; f"

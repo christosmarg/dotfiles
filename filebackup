@@ -1,10 +1,9 @@
 #!/bin/sh
 
 cp -vf \
-	/etc/devfs.conf \
 	/etc/hosts \
-	/etc/jail.conf \
 	/etc/src-env.conf \
+	${HOME}/.login_conf \
 	freebsd/
 cp -vf /etc/rc.conf freebsd/rc.conf.desktop
 cp -vf /boot/loader.conf freebsd/loader.conf.desktop

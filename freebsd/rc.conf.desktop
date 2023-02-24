@@ -4,7 +4,7 @@ ifconfig_re0="DHCP"
 sshd_enable="YES"
 dumpdev="AUTO"
 zfs_enable="YES"
-kld_list="linux nvidia nvidia modeset fusefs sound snd_hda snd_ich snd_uadio"
+kld_list="linux nvidia nvidia modeset fusefs sound snd_hda snd_ich snd_uaudio"
 sndiod_enable="YES"
 
 if_bridge_load="YES"
