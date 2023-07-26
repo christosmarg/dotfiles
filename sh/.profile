@@ -16,9 +16,8 @@
 # TERM=xterm; 	export TERM
 export EDITOR="nvim"
 export TERMINAL="st"
-export BROWSER="firefox"
+export BROWSER="librewolf"
 export READER="zathura"
-export FILE="sfm"
 export PAGER="less -R"
 
 export SFEED_YANKER="xargs echo -n | xclip -sel clip"

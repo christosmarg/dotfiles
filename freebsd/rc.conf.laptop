@@ -14,12 +14,8 @@ if_bridge_load="YES"
 if_tap_load="YES"
 if_epair_load="YES"
 
-#jail_enable="YES"
-#jail_parallel_start="YES"
-#jail_reverse_stop="YES"
-
-cloned_interfaces="bridge0 epair0 tap0"
-ifconfig_bridge0="addm wlan0 addm epair0a addm tap0 up"
+cloned_interfaces="bridge0 tap0"
+ifconfig_bridge0="addm wlan0 addm tap0 up"
 ifconfig_epair0a="up"
 
 rpcbind_enable="YES"

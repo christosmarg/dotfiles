@@ -7,5 +7,5 @@ mutt/
 ncmpcpp/.config/ncmpcpp/*
 !ncmpcpp/.config/ncmpcpp/config
 sfeed/
-freebsd/
+freebsd/hosts
 homedir/

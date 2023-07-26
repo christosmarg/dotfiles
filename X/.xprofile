@@ -1,5 +1,6 @@
 #!/bin/sh
 
+doas ntpdate -v -b 'in.pool.ntp.org' &
 xset r rate 300 50 &
 slstatus &
 setxkbmap -layout 'ca(multix),gr' -option 'grp:shift_caps_toggle' &

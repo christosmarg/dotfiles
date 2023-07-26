@@ -10,7 +10,3 @@
 	smtpserverport = 587
 [pull]
 	ff = only
-[alias]
-	fdiff = "!f() {\
-			git diff -U999999;\
-		}; f"
