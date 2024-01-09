@@ -16,7 +16,7 @@
 # TERM=xterm; 	export TERM
 export EDITOR="nvim"
 export TERMINAL="st"
-export BROWSER="librewolf"
+export BROWSER="firefox"
 export READER="zathura"
 export PAGER="less -R"
 
@@ -30,6 +30,8 @@ export LESSHISTFILE="/dev/null"
 
 # set ENV to a file invoked each time sh is started for interactive use.
 export ENV="${HOME}/.shrc"
+
+export GOPATH="${HOME}/.local/share"
 
 # Query terminal size; useful for serial lines.
 if [ -x /usr/bin/resizewin ] ; then /usr/bin/resizewin -z ; fi

@@ -15,6 +15,7 @@ cp -rv \
 	${HOME}/.gitconfig \
 	${HOME}/.password-store \
 	${HOME}/.sfeed \
+	${HOME}/.gnupg \
 	${HOME}/.ssh \
 	${HOME}/.vim \
 	homedir/
