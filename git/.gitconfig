@@ -1,6 +1,6 @@
 [user]
 	name = Christos Margiolis
-	email = christos@margiolis.net
+	email = christos@FreeBSD.org
 [http]
 	postBuffer = 157286400
 [sendemail]
@@ -10,3 +10,5 @@
 	smtpserverport = 587
 [pull]
 	ff = only
+[safe]
+	directory = /usr/src

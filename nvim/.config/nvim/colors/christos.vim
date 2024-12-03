@@ -20,7 +20,7 @@ let s:fg3=s:bg
 let s:fg4=s:bg
 
 let s:visbg="#1d27e0"
-let s:match="#EF8F8F"
+let s:match="#FF8F8F"
 
 let s:keyword="#cffff3"
 let s:builtin="#9cffe5"
@@ -83,7 +83,7 @@ exe 'hi Structure guifg='s:keyword
 exe 'hi Tag guifg='s:keyword
 exe 'hi Title guifg='s:fg
 exe 'hi Todo guifg='s:fg2' gui=inverse,bold'
-exe 'hi Type guifg='s:type
+exe 'hi Type guifg='s:type' gui=bold'
 exe 'hi Underlined gui=underline'
 exe 'hi Macro guifg='s:keyword
 
@@ -109,6 +109,9 @@ let g:terminal_color_15 = s:comment
 exe 'hi htmlLink guifg='s:var' gui=underline'
 exe 'hi htmlStatement guifg='s:keyword
 exe 'hi htmlSpecialTagName guifg='s:keyword
+
+set cursorline
+highlight CursorLine guibg=#444444
 
 " Markdown Highlighting
 exe 'hi mkdCode guifg='s:builtin

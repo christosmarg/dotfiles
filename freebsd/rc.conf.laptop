@@ -1,4 +1,5 @@
 hostname="tpad"
+#ifconfig_em0="up DHCP"
 wlans_iwm0="wlan0"
 synchronous_dhclient="YES"
 ifconfig_wlan0="up WPA DHCP"
@@ -16,6 +17,7 @@ if_epair_load="YES"
 
 cloned_interfaces="bridge0 epair0 tap0"
 ifconfig_bridge0="addm wlan0 addm epair0a addm tap0 up"
+#ifconfig_bridge0="addm em0 addm epair0a addm tap0 up"
 
 rpcbind_enable="YES"
 rpc_lockd_enable="YES"

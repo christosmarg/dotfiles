@@ -14,10 +14,8 @@ for h in ${homestuff}; do
 done
 
 cp -v \
-	freebsd/hosts \
 	freebsd/src-env.conf \
 	/etc/
 cp -v freebsd/rc.conf.desktop /etc/rc.conf
-cp -v freebsd/rc.local /etc/rc.local
 cp -v freebsd/loader.conf.desktop /boot/loader.conf
 cp -v freebsd/.login_conf ${HOME}/ && cap_mkdb ${HOME}/.login_conf
