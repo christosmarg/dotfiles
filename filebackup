@@ -1,7 +1,6 @@
 #!/bin/sh
 
 cp -vf \
-	/etc/hosts \
 	/etc/src-env.conf \
 	/etc/rc.local \
 	${HOME}/.login_conf \

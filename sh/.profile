@@ -16,7 +16,7 @@
 # TERM=xterm; 	export TERM
 export EDITOR="nvim"
 export TERMINAL="st"
-export BROWSER="firefox"
+export BROWSER="librewolf"
 export READER="zathura"
 export PAGER="less -R"
 

@@ -1,10 +1,7 @@
 aliasrc/
+arcrc/
 irssi/
 mbsync/
-mpd/.config/mpd/*
-!mpd/.config/mpd/mpd.conf
 mutt/
-ncmpcpp/.config/ncmpcpp/*
-!ncmpcpp/.config/ncmpcpp/config
 sfeed/
 homedir/

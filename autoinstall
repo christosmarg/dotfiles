@@ -1,6 +1,6 @@
 #!/bin/sh
 
-ignoredirs="\.|\.git|freebsd|homedir|xbindkeys"
+ignoredirs="\.|\.git|freebsd|homedir"
 homestuff="$(ls -a homedir/ | grep -Ev '^\.$|^\.\.$')" # FIXME single regex
 
 mkdir -p ${HOME}/.config
